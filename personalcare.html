@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ayurvedic Medicine Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Add space/margin between navbar and content */
+      nav {
+        margin-bottom: 20px;
+      }
+
+      table {
+        margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+      .card {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+        border-radius: 30px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="ayurveda.html">Ayurveda</a></li>
+        <li><a href="medicines.html">Classical Medicines</a></li>
+        <li><a href="personalcare.html">Personal Care</a></li>
+      </ul>
+    </nav>
+
+    <div id='content' class="card ">
+      <!-- Content will be dynamically loaded here based on user selection -->
+      <h1>Personal Care</h1>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Ayurvedic Medicine/Product</th>
+        </tr>
+        <tr>
+          <td rowspan="2">AYURVEDIC MEDICINE FOR</td>
+          <td>Cough and Cold</td>
+        </tr>
+        <tr>
+          <td>Fever</td>
+        </tr>
+        <tr>
+          <td rowspan="2">AYURVEDIC PRODUCTS FOR</td>
+          <td>Body Care</td>
+        </tr>
+        <tr>
+          <td>Face Care</td>
+        </tr>
+        <tr>
+          <td rowspan="2">DIGESTIVE & METABOLIC CARE</td>
+          <td>Constipation</td>
+        </tr>
+        <tr>
+          <td>Diabetes / Sugar Control</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

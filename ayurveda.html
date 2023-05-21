@@ -11,9 +11,20 @@
     />
     <style>
       /* Add space/margin between navbar and content */
-      nav {
-        margin-bottom: 20px;
-      }
+      .navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.navigation ul li a:hover {
+  color: #ff9900;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
 
       .card {
         margin-top: 20px;
@@ -21,41 +32,81 @@
         margin-right: 20px;
         padding: 15px;
         border-radius: 30px;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 16px;
+        color: black;
+        line-height: 1.5;
+        font-weight: 600;
+        text-align: justify;
       }
     </style>
     <script src="script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <ul>
-        <li><a href="ayurveda.html">Ayurveda</a></li>
-        <li><a href="medicines.html">Classical Medicines</a></li>
-        <li><a href="personalcare.html">Personal Care</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ayurvedic Medicine</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="ayurveda.html">Ayurveda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="medicines.html">Classical Medicines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personalcare.html">Personal Care</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <div  id='content' class="card">
-      <h1>WHAT IS AYURVEDA?</h1>
-      <p>
-        Ayurveda is the oldest school of medicine which helped our Indian king’s
-        health even at the time of war. Ayurveda is a system of medicine that is
-        over 5000 years old still lives and help you to lead better life with
-        nature. We promise you longevity of your health. Prevention is better
-        than cure. Prevention starts with a life that is harmony in changing
-        cycles of nature.
+    <div class="card">
+      <h1 class="card-title">WHAT IS AYURVEDA?</h1>
+      <p class="card-text">
+        Ayurveda is the oldest school of medicine which helped our Indian kings
+        maintain their health even during times of war. Ayurveda is a system of
+        medicine that is over 5000 years old and still relevant today, helping
+        you lead a better life in harmony with nature. It promises longevity of
+        your health, as prevention is better than cure. Prevention starts with a
+        life that is in harmony with the changing cycles of nature.
       </p>
-      <p>
-        In the situation of our polluted cities the modern technologies with
-        side effects helps us only to pay more for the lifetime. We are in a
-        modern age with new diseases which not even named. Modern medicines are
-        not prescribed according to your unique body type but our ayurvedic
-        medicines are from the nature’s plate. The ancient culture and medicine
-        are dug back by us which are presented in this website.
+      <p class="card-text">
+        In the polluted cities of our modern age, with new diseases emerging,
+        modern technologies with side effects often lead us to pay more for a
+        lifetime. Unlike modern medicines, which are not prescribed according to
+        your unique body type, our Ayurvedic medicines are derived from nature's
+        plate. We have revived the ancient culture and medicine, which are
+        presented on this website.
       </p>
-      <p>
-        Ayurveda understand the cycle of nature, it provides what you need and
-        makes the rhythm of life enjoyable in this dynamic circumstances.
+      <p class="card-text">
+        Ayurveda understands the cycle of nature and provides what you need to
+        make the rhythm of life enjoyable in dynamic circumstances.
       </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-XtFyBjg4Wpmzy2NBrAnzv6X+dCpHhKlQi04tqjz1g7jC4FFLaL4Ycxes+RzwHL/t"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

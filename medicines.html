@@ -1,78 +1,179 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ayurvedic Medicine Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav >
-      <ul>
-        <li><a href="ayurveda.html">Ayurveda</a></li>
-        <li><a href="medicines.html">Classical Medicines</a></li>
-        <li><a href="personalcare.html">Personal Care</a></li>
+<head>
+  <title>Ayurvedic Medicine Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Add space/margin between navbar and content */
+    nav {
+      margin-bottom: 20px;
+    }
+
+    /* Add space/margin between navbar and content */
+nav {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  height: 100%;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.btn-primary {
+  width: 100%;
+  border-radius: 50px;  
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  color: black;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ayurvedic Medicine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ayurveda.html">Ayurveda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="medicines.html">Classical Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="personalcare.html">Personal Care</a>
+        </li>
       </ul>
-    </nav>
-    
-    <div  class="row row-cols-1 row-cols-md-3 card-body">
-      <div class="col mb-4">
-        <div id='content' class="card">
-          <img src="..." class="card-img-top" alt="..." />
+    </div>
+  </nav>
+
+  <!-- Buttons -->
+  <div class="container mt-4">
+    <h2 class="text-center">Ayurvedic Medicine Categories</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Bhasmam')">Bhasmam</button>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Capsules')">Capsules</button>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Churnam')">Churnam</button>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Arishtam')">Arishtam</button>
           </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Ghritam')">Ghritam</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Granule')">Granule</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Gulika')">Gulika</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Kashayam')">Kashayam</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Kwatham (Tablet)')">Kwatham (Tablet)</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Leham')">Leham</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Tablets')">Tablets</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center d-flex">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" onclick="buttonClicked('Thailam / Ayurvedic Oils')">Thailam / Ayurvedic Oils</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function buttonClicked(item) {
+      // Handle button click event
+      console.log(item); // You can perform any desired action here
+    }
+  </script>
+</body>
 </html>

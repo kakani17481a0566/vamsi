@@ -1,9 +1,10 @@
 /* Retro-style CSS */
 
 body {
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #AA076B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: 'Arial', sans-serif;
 }
 
@@ -48,16 +49,32 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+nav{
+  font-weight: bolder;
+  
+}
+
+a{
+  color: white;
+}
+
 h1 {
   font-size: 24px;
   color: #333333;
   margin-bottom: 10px;
 }
-
+h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: WHITE;
+  margin-bottom: 10px;
+}
 p {
   font-size: 16px;
-  color: #666666;
+  color: white;
   line-height: 1.5;
+  font-weight: lighter;
+  text-align: justify;
 }
 
 .medicine-card {

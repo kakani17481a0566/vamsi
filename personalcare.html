@@ -1,114 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ayurvedic Medicine Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <style>
-      /* Add space/margin between navbar and content */
-      nav {
-        margin-bottom: 20px;
-      }
+<head>
+  <title>Ayurvedic Medicine Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <style>
+    /* Add space/margin between navbar and content */
+    nav {
+      margin-bottom: 20px;
+    }
 
-      table {
-        margin-top: 20px;
-        width: 100%;
-        border-collapse: collapse;
-      }
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-      th,
-      td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
 
-      th {
-        background-color: black;
-      }
-      .card {
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 15px;
-        border-radius: 30px;
-        background-color: transparent;
-        padding: 20px;
-        margin-top: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        color: white;
-      }
-      h1{
-        color: white;
-      }
-    </style>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Ayurvedic Medicine</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="ayurveda.html">Ayurveda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="medicines.html">Classical Medicines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="personalcare.html">Personal Care</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    th {
+      background-color: black;
+      color: white;
+    }
 
-    <div id="content" class="card">
-      <!-- Content will be dynamically loaded here based on user selection -->
-      <h1>Personal Care</h1>
-      <table>
-        <tr>
-          <th>Category</th>
-          <th>Ayurvedic Medicine/Product</th>
-        </tr>
-        <tr>
-          <td rowspan="2">AYURVEDIC MEDICINE FOR</td>
-          <td type="bu">Cough and Cold</td>
-        </tr>
-        <tr>
-          <td>Fever</td>
-        </tr>
-        <tr>
-          <td rowspan="2">AYURVEDIC PRODUCTS FOR</td>
-          <td>Body Care</td>
-        </tr>
-        <tr>
-          <td>Face Care</td>
-        </tr>
-        <tr>
-          <td rowspan="2">DIGESTIVE & METABOLIC CARE</td>
-          <td>Constipation</td>
-        </tr>
-        <tr>
-          <td>Diabetes / Sugar Control</td>
-        </tr>
-      </table>
+    .card {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 30px;
+      background-color: transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    a{
+      color: white;
+    }
+    h1{
+      color: white;
+    }
+    
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Ayurvedic Medicine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ayurveda.html">Ayurveda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="medicines.html">Classical Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="personalcare.html">Personal Care</a>
+        </li>
+      </ul>
     </div>
-  </body>
+  </nav>
+
+  <div id="content" class="card">
+    <!-- Content will be dynamically loaded here based on user selection -->
+    <h1>Personal Care</h1>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Ayurvedic Medicine/Product</th>
+      </tr>
+      <tr>
+        <td rowspan="2">AYURVEDIC MEDICINE FOR</td>
+        <td type="bu"><a href="coughandcold.html">Cough and Cold</a></td>
+      </tr>
+      <tr>
+        <td><a href="fever.html">Fever</a></td>
+      </tr>
+      <tr>
+        <td rowspan="2">AYURVEDIC PRODUCTS FOR</td>
+        <td><a href="bodycare.html">Body Care</a></td>
+      </tr>
+      <tr>
+        <td><a href="facecare.html">Face Care</a></td>
+      </tr>
+      <tr>
+        <td rowspan="2">DIGESTIVE & METABOLIC CARE</td>
+        <td><a href="constipation.html">Constipation</a></td>
+      </tr>
+      <tr>
+        <td><a href="diabetes.html">Diabetes / Sugar Control</a></td>
+      </tr>
+    </table>
+  </div>
+</body>
 </html>
